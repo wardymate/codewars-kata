@@ -8,4 +8,9 @@ describe TitleCase do
     expect(tester.title_case('')).to eq ''
   end
 
+  it 'should convert the string' do
+    expect(tester.title_case('a clash of KINGS', 'a an the of')).to eq 'A Clash of Kings'
+  end
+
+
 end

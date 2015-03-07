@@ -1,0 +1,3 @@
+class Uniquer
+
+end

@@ -1,7 +1,7 @@
 class ArraySorter
 
   def sort(input_array)
-    input_array.map{|element| element.downcase.reverse}.sort.map{|element| element.reverse.capitalize}
+    input_array.sort{|a,b| b.downcase <=> a.downcase}.reverse
   end
 
 

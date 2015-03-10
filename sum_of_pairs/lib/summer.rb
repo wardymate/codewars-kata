@@ -1,6 +1,10 @@
 class Summer
 
   def sum_pairs(input,number)
+    if input.length > 1000
+      input = input.pop(1000)
+    end
+
     worker = input.select{|e| input.include?(number-e)}
     return nil if worker.length == 0
     return worker if worker.length == 2

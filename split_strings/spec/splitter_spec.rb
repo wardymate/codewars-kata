@@ -10,4 +10,11 @@ describe Splitter do
     expect(splitter.split_strings(input)).to eq output
   end
 
+  it'should split strings as follws' do
+    input = 'abc'
+    output = ['ab', 'c_']
+    expect(splitter.split_strings(input)).to eq output
+  end
+
+
 end

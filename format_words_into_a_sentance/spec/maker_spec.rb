@@ -10,7 +10,16 @@ describe Maker do
     expect(maker.format_words(input)).to eq output
   end
 
+  it 'converts the given array to a string' do
+    input = ['ninja', '', 'ronin']
+    output = "ninja and ronin"
+    expect(maker.format_words(input)).to eq output
+  end
 
-
+  it 'converts the given array to a string' do
+    input = []
+    output = ""
+    expect(maker.format_words(input)).to eq output
+  end
 
 end

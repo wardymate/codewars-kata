@@ -22,6 +22,10 @@ describe Worder do
     expect(worder.abbreviate(input)).to eq output
   end
 
-
+  it 'should convert elephant-ride to e6t-r2e' do
+    input = "You, and I, should speak."
+    output = "You, and I, s4d s3k."
+    expect(worder.abbreviate(input)).to eq output
+  end
 
 end

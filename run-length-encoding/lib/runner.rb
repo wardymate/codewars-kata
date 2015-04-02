@@ -1,6 +1,8 @@
 class Runner
 
   def rle(input)
+    return [] if input == nil
+    return [] if input == ''
     worker = input.chars
     output = []
     number = worker.length
@@ -10,5 +12,6 @@ class Runner
     end
     output
   end
+
 
 end

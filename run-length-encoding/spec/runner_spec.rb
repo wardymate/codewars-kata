@@ -16,6 +16,11 @@ describe Runner do
     expect(runner.rle(input)).to eq output
   end
 
+  it"converts a string to coded data" do
+    input = "abc"
+    output = [[1,'a'], [1,'b'],[1,'c']]
+    expect(runner.rle(input)).to eq output
+  end
 
 
 

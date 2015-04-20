@@ -40,14 +40,4 @@ describe Masker do
     expect(masker.maskify(input)).to eq output
   end
 
-
 end
-
-
-# maskify('64607935616')      # should return '#######5616'
-# maskify('1')                # should return '1'
-# maskify('')                 # should return ''
-
-
-# maskify('Skippy')                                   # should return '##ippy'
-# maskify('Nananananananananananananananana Batman!') # should return '####################################man!'
